@@ -12,6 +12,8 @@
 		086C95E91F4D1F2D00E5FBCD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086C95E71F4D1F2D00E5FBCD /* Main.storyboard */; };
 		086C95EB1F4D1F2D00E5FBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086C95EA1F4D1F2D00E5FBCD /* Assets.xcassets */; };
 		086C95EE1F4D1F2D00E5FBCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086C95EC1F4D1F2D00E5FBCD /* LaunchScreen.storyboard */; };
+		086C95F61F4D209100E5FBCD /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C95F51F4D209100E5FBCD /* MainNavigationController.swift */; };
+		086C95F81F4D296800E5FBCD /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086C95F71F4D296800E5FBCD /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		086C95EA1F4D1F2D00E5FBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		086C95ED1F4D1F2D00E5FBCD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		086C95EF1F4D1F2D00E5FBCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		086C95F51F4D209100E5FBCD /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		086C95F71F4D296800E5FBCD /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				086C95E31F4D1F2D00E5FBCD /* AppDelegate.swift */,
+				086C95F51F4D209100E5FBCD /* MainNavigationController.swift */,
 				086C95E51F4D1F2D00E5FBCD /* ViewController.swift */,
+				086C95F71F4D296800E5FBCD /* QRCodeViewController.swift */,
 				086C95E71F4D1F2D00E5FBCD /* Main.storyboard */,
 				086C95EA1F4D1F2D00E5FBCD /* Assets.xcassets */,
 				086C95EC1F4D1F2D00E5FBCD /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					086C95DF1F4D1F2D00E5FBCD = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = EJTZ9FXV32;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086C95F61F4D209100E5FBCD /* MainNavigationController.swift in Sources */,
 				086C95E61F4D1F2D00E5FBCD /* ViewController.swift in Sources */,
+				086C95F81F4D296800E5FBCD /* QRCodeViewController.swift in Sources */,
 				086C95E41F4D1F2D00E5FBCD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +269,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EJTZ9FXV32;
 				INFOPLIST_FILE = QRcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LinCrazy.QRcode;
@@ -272,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EJTZ9FXV32;
 				INFOPLIST_FILE = QRcode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LinCrazy.QRcode;
@@ -299,6 +310,7 @@
 				086C95F41F4D1F2D00E5FBCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

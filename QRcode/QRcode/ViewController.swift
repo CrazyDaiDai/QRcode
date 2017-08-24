@@ -12,8 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.backgroundColor = #colorLiteral(red: 0.1411764771, green: 0.3960784376, blue: 0.5647059083, alpha: 1)
+        let btn = UIButton.init(frame: .init(x: 200, y: 200, width: 50, height: 50))
+        btn.setTitle("Click", for: .normal)
+        btn.addTarget(self, action: #selector(btnClick(sender:)), for: .touchUpInside)
+        view.addSubview(btn)
     }
+    
+    func btnClick(sender: UIButton) {
+        
+        navigationController?.pushViewController(QRCodeViewController(), animated: true)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
